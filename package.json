@@ -17,6 +17,7 @@
     "i18next-http-middleware": "^3.9.0",
     "install": "^0.13.0",
     "jsonwebtoken": "^9.0.3",
+    "minio": "^8.0.6",
     "npm": "^11.7.0",
     "pino": "^10.1.0",
     "pino-http": "^11.0.0",
