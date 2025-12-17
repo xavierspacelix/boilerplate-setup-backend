@@ -1,6 +1,8 @@
 import { redis } from '@config/redis';
 import { logger } from './logger';
-import { RedisConnectionError } from '@errors/index';
+import { RedisConnectionError, StorageError } from '@errors/index';
+import { minioClient } from '@config/minio';
+import { env } from '@config/env';
 
 export const resources = {
   async connectAll() {
@@ -18,6 +20,14 @@ export const resources = {
       // Graceful shutdown
       process.kill(process.pid, 'SIGTERM');
     });
+
+    try {
+      await minioClient.bucketExists(env.MINIO_BUCKETNAME);
+      logger.info('✅ MinIO reachable');
+    } catch (err) {
+      logger.error({ err }, '❌ MinIO unreachable');
+      throw new StorageError('Failed to reach MinIO');
+    }
   },
 
   async disconnectAll() {
