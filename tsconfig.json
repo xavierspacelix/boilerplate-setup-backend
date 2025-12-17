@@ -27,7 +27,8 @@
       "@config/*": ["config/*"],
       "@errors/*": ["errors/*"],
       "@i18n/*": ["i18n/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@middlewares/*": ["middlewares/*"]
     }
   },
   "include": ["src/**/*.ts"],
