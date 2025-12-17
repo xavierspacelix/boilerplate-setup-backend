@@ -1,0 +1,19 @@
+{
+  "errors": {
+    "BAD_REQUEST": "Bad request",
+    "UNAUTHORIZED": "Unauthorized",
+    "INVALID_CREDENTIALS": "Invalid email or password",
+    "FORBIDDEN": "Access forbidden",
+    "NOT_FOUND": "Resource not found",
+    "VALIDATION": "Validation failed",
+    "INTERNAL_SERVER": "Internal server error",
+    "RATE_LIMIT": "Rate limit exceeded",
+    "DB_ERROR": "Database error",
+    "REDIS_CONNECTION": "Redis connection error",
+    "UPLOAD": "Upload error",
+    "UNSUPPORTED_MEDIA": "Unsupported media type",
+    "CONFLICT": "Conflict error",
+    "VALIDATION_ERROR": "Validation error",
+    "CACHE_ERROR": "Cache error"
+  }
+}

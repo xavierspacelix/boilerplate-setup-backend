@@ -1,0 +1,19 @@
+{
+  "errors": {
+    "BAD_REQUEST": "Permintaan tidak valid",
+    "UNAUTHORIZED": "Tidak diizinkan",
+    "INVALID_CREDENTIALS": "Email atau kata sandi salah",
+    "FORBIDDEN": "Akses ditolak",
+    "NOT_FOUND": "Data tidak ditemukan",
+    "VALIDATION": "Validasi gagal",
+    "INTERNAL_SERVER": "Kesalahan server",
+    "RATE_LIMIT": "Melebihi batas permintaan",
+    "DB_ERROR": "Kesalahan database",
+    "REDIS_CONNECTION": "Kesalahan koneksi Redis",
+    "UPLOAD": "Kesalahan upload",
+    "UNSUPPORTED_MEDIA": "Jenis media tidak didukung",
+    "CONFLICT": "Kesalahan konflik",
+    "VALIDATION_ERROR": "Kesalahan validasi",
+    "CACHE_ERROR": "Kesalahan cache"
+  }
+}
