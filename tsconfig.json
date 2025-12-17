@@ -28,7 +28,8 @@
       "@errors/*": ["errors/*"],
       "@i18n/*": ["i18n/*"],
       "@utils/*": ["utils/*"],
-      "@middlewares/*": ["middlewares/*"]
+      "@middlewares/*": ["middlewares/*"],
+      "@types/*": ["types/*"]
     }
   },
   "include": ["src/**/*.ts"],

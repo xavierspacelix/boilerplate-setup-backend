@@ -10,6 +10,7 @@ const envSchema = z.object({
   DATE_TIMEZONE: z.string().default('Asia/Jakarta'),
   HOST: z.string().min(1).default('localhost'),
   PORT: z.coerce.number().int().positive().default(8080),
+  REFRESH_TTL: z.string().default('30d'),
   CORS_ORIGIN: z
     .string()
     .default('http://localhost:3001')

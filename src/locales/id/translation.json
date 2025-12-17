@@ -14,6 +14,9 @@
     "UNSUPPORTED_MEDIA": "Jenis media tidak didukung",
     "CONFLICT": "Kesalahan konflik",
     "VALIDATION_ERROR": "Kesalahan validasi",
-    "CACHE_ERROR": "Kesalahan cache"
+    "CACHE_ERROR": "Kesalahan cache",
+    "INVALID_EXPIRE_FORMAT": "Format expiresIn tidak valid: {input}",
+    "INVALID_TIME_UNIT": "Unit waktu tidak valid: {unit}",
+    "SUCCESS": "Sukses"
   }
 }
