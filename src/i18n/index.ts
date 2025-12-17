@@ -17,4 +17,4 @@ i18next
     },
   });
 
-export default i18next;
+export const i18nMiddleware = middleware.handle(i18next);
