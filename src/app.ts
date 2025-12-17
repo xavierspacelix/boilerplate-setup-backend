@@ -5,6 +5,7 @@ import { env } from '@config/env';
 import { openAPIRouter } from '@docs/openAPIRouter';
 import rateLimiter from '@middlewares/rateLimiter';
 import { requestLogger } from '@middlewares/requestLogger';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(i18nMiddleware);
 app.use(requestLogger);
 app.use(rateLimiter);
-
+app.use(cookieParser());
 // routes
 
 if (env.isDevelopment) {
