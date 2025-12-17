@@ -1,5 +1,6 @@
 import { env } from '@config/env';
 import { logger } from '@utils/logger';
+import { resources } from '@utils/resources';
 import app from 'app';
 import http from 'http';
 
@@ -35,6 +36,8 @@ const shutdown = async (signal: string) => {
         );
       }
     }
+
+    await resources.disconnectAll();
     logger.info('🛑 All resources disconnected');
   } catch (err) {
     logger.error({ err }, '❌ Shutdown error');
@@ -62,6 +65,7 @@ async function start() {
     logger.info(`🚀 Service startup initiated (PID: ${process.pid})`);
 
     logger.info('🔗 Connecting resources...');
+    await resources.connectAll();
     logger.info('✅ All resources connected');
 
     server = http.createServer(app);
