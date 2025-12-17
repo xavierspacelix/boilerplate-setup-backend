@@ -15,6 +15,12 @@ const envSchema = z.object({
   REDIS_PORT: z.coerce.number().int().positive().default(6379),
   REDIS_USER: z.string().min(1).default('default'),
   REDIS_PASSWORD: z.string().min(1).default(''),
+  COMMON_RATE_LIMIT_MAX_REQUESTS: z.coerce
+    .number()
+    .int()
+    .positive()
+    .default(1000),
+  COMMON_RATE_LIMIT_WINDOW_MS: z.coerce.number().int().positive().default(1000),
   CORS_ORIGIN: z
     .string()
     .default('http://localhost:3001')
