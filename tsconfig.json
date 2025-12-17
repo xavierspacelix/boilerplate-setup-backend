@@ -29,7 +29,12 @@
       "@i18n/*": ["i18n/*"],
       "@utils/*": ["utils/*"],
       "@middlewares/*": ["middlewares/*"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@docs/*": ["docs/*"],
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@services/*": ["services/*"],
+      "@dtos/*": ["dtos/*"]
     }
   },
   "include": ["src/**/*.ts"],
