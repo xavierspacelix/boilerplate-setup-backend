@@ -24,7 +24,10 @@
 
     "baseUrl": "./src",
     "paths": {
-      "@app/*": ["app/*"]
+      "@config/*": ["config/*"],
+      "@errors/*": ["errors/*"],
+      "@i18n/*": ["i18n/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src/**/*.ts"],
