@@ -4,7 +4,7 @@ import fs from 'fs';
 import { env } from '@config/env';
 import { toDateString } from './date';
 
-const logDir = path.join(__dirname, '../../../logs');
+const logDir = path.join(__dirname, '../../logs');
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir);
 
 // File transport for production
