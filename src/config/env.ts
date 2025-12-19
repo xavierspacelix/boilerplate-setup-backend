@@ -1,6 +1,7 @@
-import { InternalServerError } from '@errors/index';
 import dotenv from 'dotenv';
 import { z } from 'zod';
+
+import { InternalServerError } from '@errors/index';
 
 dotenv.config({ quiet: true });
 
@@ -11,6 +12,9 @@ const envSchema = z.object({
   HOST: z.string().min(1).default('localhost'),
   PORT: z.coerce.number().int().positive().default(8080),
   REFRESH_TTL: z.string().default('30d'),
+  DATABASE_URL: z
+    .url()
+    .default('postgresql://myuser:mypassword@localhost:5432/mydatabase'),
   REDIS_HOST: z.string().min(1).default('localhost'),
   REDIS_PORT: z.coerce.number().int().positive().default(6379),
   REDIS_USER: z.string().min(1).default('default'),

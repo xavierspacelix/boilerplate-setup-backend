@@ -1,5 +1,6 @@
-import { env } from '@config/env';
 import * as Minio from 'minio';
+
+import { env } from '@config/env';
 
 export const minioClient = new Minio.Client({
   endPoint: env.MINIO_INTERNAL_ENDPOINT,

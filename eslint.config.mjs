@@ -1,9 +1,11 @@
-import js from '@eslint/js';
+import prettierConfig from 'eslint-config-prettier';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import prettierPlugin from 'eslint-plugin-prettier';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import prettierPlugin from 'eslint-plugin-prettier';
-import prettierConfig from 'eslint-config-prettier';
-import { defineConfig } from 'eslint/config';
+
+import js from '@eslint/js';
 
 export default defineConfig([
   {
@@ -38,4 +40,5 @@ export default defineConfig([
     },
   },
   tseslint.configs.recommended,
+  eslintConfigPrettier,
 ]);

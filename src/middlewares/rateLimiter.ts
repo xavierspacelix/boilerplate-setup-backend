@@ -1,8 +1,9 @@
 import type { Request, Response } from 'express';
+import { ipKeyGenerator, rateLimit } from 'express-rate-limit';
+
 import { env } from '@config/env';
 import { RateLimitError } from '@errors/index';
 import { SendError } from '@utils/response';
-import { ipKeyGenerator, rateLimit } from 'express-rate-limit';
 
 /**
  * Express middleware for rate limiting using `express-rate-limit`.

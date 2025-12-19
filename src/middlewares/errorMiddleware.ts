@@ -1,5 +1,6 @@
+import { NextFunction, Request, Response } from 'express';
+
 import { SendError } from '@utils/response';
-import { Request, Response, NextFunction } from 'express';
 
 export function errorMiddleware(
   err: unknown,
