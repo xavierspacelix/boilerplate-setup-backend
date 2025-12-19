@@ -1,11 +1,12 @@
+import cookieParser from 'cookie-parser';
 import express from 'express';
-import { i18nMiddleware } from '@i18n/index';
-import { errorMiddleware } from '@middlewares/errorMiddleware';
+
 import { env } from '@config/env';
 import { openAPIRouter } from '@docs/openAPIRouter';
+import { i18nMiddleware } from '@i18n/index';
+import { errorMiddleware } from '@middlewares/errorMiddleware';
 import rateLimiter from '@middlewares/rateLimiter';
 import { requestLogger } from '@middlewares/requestLogger';
-import cookieParser from 'cookie-parser';
 
 const app = express();
 

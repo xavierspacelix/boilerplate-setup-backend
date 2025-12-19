@@ -1,10 +1,10 @@
+import { ResponseConfig } from '@asteasolutions/zod-to-openapi';
+import { ApiResponseConfig } from '@docs/openAPIResponseConfig';
 import {
   ErrorResponseSchema,
   ErrorResponseSchemaWithDetails,
   SuccessResponseSchema,
 } from '@dtos/docs';
-import { ResponseConfig } from '@asteasolutions/zod-to-openapi';
-import { ApiResponseConfig } from '@docs/openAPIResponseConfig';
 
 /**
  * Transforms a list of API response configurations into an OpenAPI-compatible response object.

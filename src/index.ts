@@ -1,8 +1,9 @@
+import app from 'app';
+import http from 'http';
+
 import { env } from '@config/env';
 import { logger } from '@utils/logger';
 import { resources } from '@utils/resources';
-import app from 'app';
-import http from 'http';
 
 let isShuttingDown = false;
 let server: http.Server | null = null;

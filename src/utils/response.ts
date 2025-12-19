@@ -1,6 +1,7 @@
+import { Request, Response } from 'express';
+
 import { BaseError } from '@errors/BaseError';
 import { keys } from '@i18n/errorKeys';
-import { Response, Request } from 'express';
 
 export function SendSuccess<T>(
   res: Response,

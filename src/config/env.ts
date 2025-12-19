@@ -1,6 +1,7 @@
-import { InternalServerError } from '@errors/index';
 import dotenv from 'dotenv';
 import { z } from 'zod';
+
+import { InternalServerError } from '@errors/index';
 
 dotenv.config({ quiet: true });
 

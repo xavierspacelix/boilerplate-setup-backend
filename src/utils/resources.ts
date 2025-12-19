@@ -1,8 +1,9 @@
-import { redis } from '@config/redis';
-import { logger } from './logger';
-import { RedisConnectionError, StorageError } from '@errors/index';
-import { minioClient } from '@config/minio';
 import { env } from '@config/env';
+import { minioClient } from '@config/minio';
+import { redis } from '@config/redis';
+import { RedisConnectionError, StorageError } from '@errors/index';
+
+import { logger } from './logger';
 
 export const resources = {
   async connectAll() {

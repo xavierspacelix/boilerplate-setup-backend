@@ -1,4 +1,5 @@
 import { keys } from '@i18n/errorKeys';
+
 import { BaseError } from './BaseError';
 
 export class BadRequestError extends BaseError {

@@ -1,7 +1,9 @@
-import pino from 'pino';
-import path, { join } from 'path';
 import fs from 'fs';
+import path, { join } from 'path';
+import pino from 'pino';
+
 import { env } from '@config/env';
+
 import { toDateString } from './date';
 
 const logDir = path.join(__dirname, '../../logs');
