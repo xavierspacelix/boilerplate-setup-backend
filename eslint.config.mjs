@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import prettierPlugin from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 import { defineConfig } from 'eslint/config';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default defineConfig([
   {
@@ -38,4 +39,5 @@ export default defineConfig([
     },
   },
   tseslint.configs.recommended,
+  eslintConfigPrettier,
 ]);
